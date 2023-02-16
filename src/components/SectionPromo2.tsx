@@ -23,18 +23,19 @@ const SectionPromo2: FC<SectionPromo2Props> = ({ className = "lg:pt-10" }) => {
 
         <div className="lg:w-[45%] max-w-lg relative">
           <Logo className="w-28" />
-          <h2 className="font-semibold text-3xl sm:text-4xl xl:text-5xl 2xl:text-6xl mt-6 sm:mt-10 !leading-[1.13] tracking-tight">
-            ㅇㅇㅇ
+          <h2 className="font-semibold text-2xl sm:text-4xl xl:text-4xl 2xl:text-5xl mt-6 sm:mt-10 !leading-[1.13] tracking-tight">
+            특별한
+            <br /> 세트구성 / 대용량 상품
           </h2>
           <span className="block mt-6 text-slate-500 dark:text-slate-400">
-            ㅇㅇㅇ
+            월드콘돔에서만 구매가능 한<br /> 특별한 SET구성 상품 및 대용량 콘돔
           </span>
           <div className="flex space-x-2 sm:space-x-5 mt-6 sm:mt-12">
             <ButtonPrimary
               href="/page-search"
               className="dark:bg-slate-200 dark:text-slate-900"
             >
-              자세히 보기
+              전체보기
             </ButtonPrimary>
           </div>
         </div>

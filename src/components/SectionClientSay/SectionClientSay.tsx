@@ -12,6 +12,8 @@ import clientSay6 from "images/clientSay6.png";
 import quotationImg from "images/quotation.png";
 import quotationImg2 from "images/quotation2.png";
 import { StarIcon } from "@heroicons/react/24/solid";
+import ButtonSecondary from "shared/Button/ButtonSecondary";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
 
 export interface SectionClientSayProps {
   className?: string;
@@ -142,6 +144,14 @@ const SectionClientSay: FC<SectionClientSayProps> = ({ className = "" }) => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center">
+        <ButtonPrimary
+          href="/page-search"
+          className="border border-slate-100 dark:border-slate-700"
+        >
+          콘돔 사용후기
+        </ButtonPrimary>
       </div>
     </div>
   );

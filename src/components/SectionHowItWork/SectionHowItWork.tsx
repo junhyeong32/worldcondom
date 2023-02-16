@@ -17,29 +17,29 @@ const DEMO_DATA = [
     id: 1,
     img: HIW1img,
     imgDark: HIW1img,
-    title: "상품 & 검색",
-    desc: "검색을 통해 상품을 쉽게 찾을 수 있습니다",
+    title: "신규 회원 가입시",
+    desc: "2,000원 적립금!",
   },
   {
     id: 2,
     img: HIW2img,
     imgDark: HIW2img,
-    title: "상품 담기",
-    desc: "구매하려는 상품을 선택하여 장바구니에 추가하기",
+    title: "3만원 이상 구매시",
+    desc: "배송비 무료!",
   },
   {
     id: 3,
     img: HIW3img,
     imgDark: HIW3img,
-    title: "당일 배송",
-    desc: "오후 5시 이전 주문 시 당일배송",
+    title: "상품명 미노출",
+    desc: "안심 비밀배송!",
   },
   {
     id: 4,
     img: HIW4img,
     imgDark: HIW4img,
-    title: "상품 사용하기",
-    desc: "받으신 상품을 사용설명서에 맞게 사용하기",
+    title: "오후 4시이전 주문 시",
+    desc: "내일 도착 당일배송!",
   },
 ];
 
@@ -69,7 +69,7 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
               src={item.img}
             />
             <div className="text-center mt-auto space-y-5">
-              <Badge
+              {/* <Badge
                 name={`Step ${index + 1}`}
                 color={
                   !index
@@ -80,9 +80,9 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
                     ? "yellow"
                     : "purple"
                 }
-              />
+              /> */}
               <h3 className="text-base font-semibold">{item.title}</h3>
-              <span className="block text-slate-600 dark:text-slate-400 text-sm leading-6">
+              <span className="block text-slate-600 dark:text-slate-400 text-sm leading-6 text-red-600 font-semibold">
                 {item.desc}
               </span>
             </div>

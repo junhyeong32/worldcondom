@@ -9,23 +9,25 @@ import { Transition } from "@headlessui/react";
 
 export interface HeaderFilterSectionProps {
   className?: string;
+  heading?: string;
 }
 
 const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
   className = "mb-12",
+  heading,
 }) => {
   const [isOpen, setIsOpen] = React.useState(true);
-  const [tabActive, setTabActive] = React.useState("All items");
+  const [tabActive, setTabActive] = React.useState("전체");
 
   return (
     <div className={`flex flex-col relative ${className}`}>
-      <Heading>ㅇㅇㅇㅇ</Heading>
+      <Heading desc="특수콘돔">{heading || "ㅇㅇㅇㅇ"}</Heading>
       <div className="flex flex-col lg:flex-row lg:items-center justify-between space-y-6 lg:space-y-0 lg:space-x-2 ">
         <Nav
           className="sm:space-x-2"
           containerClassName="relative flex w-full overflow-x-auto text-sm md:text-base hiddenScrollbar"
         >
-          {["All items", "Women", "Mans", "Kids", "jewels"].map(
+          {["전체", "여성인기", "남성인기", "특수콘돔", "NEW"].map(
             (item, index) => (
               <NavItem
                 key={index}
@@ -81,7 +83,7 @@ const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
         </span>
       </div>
 
-      <Transition
+      {/* <Transition
         show={isOpen}
         enter="transition-opacity duration-150"
         enterFrom="opacity-0"
@@ -92,7 +94,7 @@ const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
       >
         <div className="w-full border-b border-neutral-200 dark:border-neutral-700 my-8"></div>
         <TabFilters />
-      </Transition>
+      </Transition> */}
     </div>
   );
 };

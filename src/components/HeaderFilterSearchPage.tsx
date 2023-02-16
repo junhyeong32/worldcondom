@@ -14,7 +14,7 @@ const HeaderFilterSearchPage: FC<HeaderFilterSearchPageProps> = ({
   className = "mb-12",
 }) => {
   const [isOpen, setIsOpen] = React.useState(true);
-  const [tabActive, setTabActive] = React.useState("All items");
+  const [tabActive, setTabActive] = React.useState("전체");
 
   return (
     <div className={`flex flex-col relative ${className}`}>
@@ -23,7 +23,7 @@ const HeaderFilterSearchPage: FC<HeaderFilterSearchPageProps> = ({
           className="sm:space-x-2"
           containerClassName="relative flex w-full overflow-x-auto text-sm md:text-base hiddenScrollbar"
         >
-          {["All items", "Women", "Man", "Jewels", "Kids"].map(
+          {["전체", "여성인기", "남성인기", "특수콘돔", "NEW"].map(
             (item, index) => (
               <NavItem
                 key={index}

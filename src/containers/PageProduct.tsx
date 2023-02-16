@@ -94,6 +94,17 @@ const PageProduct: FC<PageProductProps> = ({ className = "" }) => {
                     ? "손가락 콘돔"
                     : "구슬 콘돔"
                 }
+                // subHeading={
+                //   productName === "thin"
+                //     ? "초박형 콘돔"
+                //     : productName === "delay"
+                //     ? "사정지연 콘돔"
+                //     : productName === "spin"
+                //     ? "돌기 콘돔"
+                //     : productName === "finger"
+                //     ? "손가락 콘돔"
+                //     : "구슬 콘돔"
+                // }
                 data={[
                   PRODUCTS[4],
                   SPORT_PRODUCTS[5],
@@ -104,7 +115,7 @@ const PageProduct: FC<PageProductProps> = ({ className = "" }) => {
               />
             </div>
 
-            <SectionSliderLargeProduct  cardStyle="style2" />
+            <SectionSliderLargeProduct cardStyle="style2" />
 
             {/* PAGINATION */}
             {/* <div className="flex flex-col mt-12 lg:mt-16 space-y-5 sm:space-y-0 sm:space-x-3 sm:flex-row sm:justify-between sm:items-center">

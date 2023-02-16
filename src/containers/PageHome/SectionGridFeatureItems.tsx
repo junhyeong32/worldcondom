@@ -14,7 +14,7 @@ const SectionGridFeatureItems: FC<SectionGridFeatureItemsProps> = ({
 }) => {
   return (
     <div className="nc-SectionGridFeatureItems relative">
-      <HeaderFilterSection />
+      <HeaderFilterSection heading="실시간 상품 랭킹" />
       <div
         className={`grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 `}
       >
