@@ -16,10 +16,14 @@ const SectionGridFeatureItems: FC<SectionGridFeatureItemsProps> = ({
     <div className="nc-SectionGridFeatureItems relative">
       <HeaderFilterSection heading="실시간 상품 랭킹" />
       <div
-        className={`grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 `}
+        className={`grid gap-8 product_container template-col-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 `}
       >
         {data.map((item, index) => (
-          <ProductCard data={item} key={index} />
+          <ProductCard
+            data={item}
+            key={index}
+            className="product_card_mobile"
+          />
         ))}
       </div>
       <div className="flex mt-16 justify-center items-center">

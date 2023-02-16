@@ -5,3 +5,17 @@
 @import "./header";
 
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+@media (max-width: 639px) {
+  .template-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product_card_mobile {
+    width: 90%;
+  }
+
+  .product_container {
+    gap: 2.5vw !important;
+  }
+}
