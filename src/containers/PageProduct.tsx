@@ -10,6 +10,7 @@ import TabFilters from "./TabFilters";
 import { PRODUCTS, SPORT_PRODUCTS } from "data/data";
 import SectionSliderProductCard from "components/SectionSliderProductCard";
 import SectionSliderLargeProduct from "components/SectionSliderLargeProduct";
+import SectionGridFeatureItems2 from "./PageHome/SectionGridFeatureItems2";
 
 export interface PageProductProps {
   className?: string;
@@ -82,7 +83,7 @@ const PageProduct: FC<PageProductProps> = ({ className = "" }) => {
               {/* {PRODUCTS.map((item, index) => (
                 <ProductCard data={item} key={index} />
               ))} */}
-              <SectionSliderProductCard
+              <SectionGridFeatureItems2
                 heading={
                   productName === "thin"
                     ? "초박형 콘돔"

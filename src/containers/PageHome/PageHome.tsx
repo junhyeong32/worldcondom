@@ -11,6 +11,7 @@ import SectionGridMoreExplore from "components/SectionGridMoreExplore/SectionGri
 import SectionPromo2 from "components/SectionPromo2";
 import SectionSliderCategories from "components/SectionSliderCategories/SectionSliderCategories";
 import SectionGridFeatureItems from "./SectionGridFeatureItems";
+import SectionGridFeatureItems2 from "./SectionGridFeatureItems2";
 import SectionPromo3 from "components/SectionPromo3";
 import SectionClientSay from "components/SectionClientSay/SectionClientSay";
 import SectionMagazine5 from "containers/BlogPage/SectionMagazine5";
@@ -45,7 +46,7 @@ function PageHome() {
           </span>
         </div>
 
-        <SectionSliderProductCard
+        <SectionGridFeatureItems2
           heading="고급 국산 콘돔"
           data={[
             PRODUCTS[4],
@@ -56,7 +57,7 @@ function PageHome() {
           ]}
         />
 
-        <SectionSliderProductCard
+        <SectionGridFeatureItems2
           heading="고급 수입 콘돔"
           data={[
             PRODUCTS[4],
@@ -69,7 +70,7 @@ function PageHome() {
 
         <SectionPromo2 />
 
-        <SectionSliderProductCard
+        <SectionGridFeatureItems2
           heading="스페셜 세트"
           data={[
             PRODUCTS[4],
@@ -80,7 +81,7 @@ function PageHome() {
           ]}
         />
 
-        <SectionSliderProductCard
+        <SectionGridFeatureItems2
           heading="대용량 콘돔"
           data={[
             PRODUCTS[4],

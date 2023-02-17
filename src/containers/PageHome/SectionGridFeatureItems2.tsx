@@ -3,20 +3,23 @@ import HeaderFilterSection from "components/HeaderFilterSection";
 import ProductCard from "components/ProductCard";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
 import { Product, PRODUCTS } from "data/data";
+import Heading from "components/Heading/Heading";
 
 //
 export interface SectionGridFeatureItemsProps {
   data?: Product[];
   headerFilter?: boolean;
+  heading: string;
 }
 
-const SectionGridFeatureItems: FC<SectionGridFeatureItemsProps> = ({
+const SectionGridFeatureItems2: FC<SectionGridFeatureItemsProps> = ({
   data = PRODUCTS,
   headerFilter = true,
+  heading,
 }) => {
   return (
     <div className="nc-SectionGridFeatureItems relative">
-      {headerFilter && <HeaderFilterSection heading="실시간 상품 랭킹" />}
+      <Heading>{heading}</Heading>
       <div
         className={`grid gap-8 product_container template-col-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 `}
       >
@@ -28,11 +31,11 @@ const SectionGridFeatureItems: FC<SectionGridFeatureItemsProps> = ({
           />
         ))}
       </div>
-      <div className="flex mt-16 justify-center items-center">
+      {/* <div className="flex mt-16 justify-center items-center">
         <ButtonPrimary loading>Show me more</ButtonPrimary>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default SectionGridFeatureItems;
+export default SectionGridFeatureItems2;
