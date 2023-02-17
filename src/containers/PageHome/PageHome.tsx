@@ -29,8 +29,8 @@ function PageHome() {
       {/* SECTION HERO */}
       <SectionHero2 />
 
-      <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-32">
-        <div className="py-24 lg:py-32 border-t border-b border-slate-200 dark:border-slate-700">
+      <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-15">
+        <div className=" dark:border-slate-700">
           <SectionHowItWork />
         </div>
         <SectionGridFeatureItems />
@@ -53,7 +53,7 @@ function PageHome() {
             SPORT_PRODUCTS[5],
             PRODUCTS[7],
             SPORT_PRODUCTS[1],
-            PRODUCTS[6],
+            // PRODUCTS[6],
           ]}
         />
 
@@ -64,7 +64,7 @@ function PageHome() {
             SPORT_PRODUCTS[5],
             PRODUCTS[7],
             SPORT_PRODUCTS[1],
-            PRODUCTS[6],
+            // PRODUCTS[6],
           ]}
         />
 
@@ -77,7 +77,7 @@ function PageHome() {
             SPORT_PRODUCTS[5],
             PRODUCTS[7],
             SPORT_PRODUCTS[1],
-            PRODUCTS[6],
+            // PRODUCTS[6],
           ]}
         />
 
@@ -88,7 +88,7 @@ function PageHome() {
             SPORT_PRODUCTS[5],
             PRODUCTS[7],
             SPORT_PRODUCTS[1],
-            PRODUCTS[6],
+            // PRODUCTS[6],
           ]}
         />
 

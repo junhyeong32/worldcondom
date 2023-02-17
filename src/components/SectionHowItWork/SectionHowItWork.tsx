@@ -52,7 +52,7 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
       className={`nc-SectionHowItWork ${className}`}
       data-nc-id="SectionHowItWork"
     >
-      <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-16 xl:gap-20">
+      <div className="relative grid template-col-2 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-16 xl:gap-20">
         <img
           className="hidden md:block absolute inset-x-0 top-5"
           src={VectorImg}
