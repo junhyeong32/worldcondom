@@ -15,7 +15,10 @@ const SectionGridFeatureItems: FC<SectionGridFeatureItemsProps> = ({
   headerFilter = true,
 }) => {
   return (
-    <div className="nc-SectionGridFeatureItems relative">
+    <div
+      className="nc-SectionGridFeatureItems relative"
+      style={{ marginTop: "5rem" }}
+    >
       {headerFilter && <HeaderFilterSection heading="실시간 상품 랭킹" />}
       <div
         className={`grid gap-8 product_container template-col-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 `}

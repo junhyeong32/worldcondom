@@ -29,7 +29,7 @@ function PageHome() {
       {/* SECTION HERO */}
       <SectionHero2 />
 
-      <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-15">
+      <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-5">
         <div className=" dark:border-slate-700">
           <SectionHowItWork />
         </div>
