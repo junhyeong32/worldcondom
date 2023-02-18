@@ -21,8 +21,8 @@ const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
 
   return (
     <div className={`flex flex-col relative ${className}`}>
-      <Heading desc="특수콘돔">{heading || "ㅇㅇㅇㅇ"}</Heading>
-      <div className="flex flex-col lg:flex-row lg:items-center justify-between space-y-6 lg:space-y-0 lg:space-x-2 ">
+      <Heading style={{ marginBottom: "-20px" }}>{heading}</Heading>
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between space-y-6 lg:space-y-0 lg:space-x-2">
         <Nav
           className="sm:space-x-2"
           containerClassName="relative flex w-full overflow-x-auto text-sm md:text-base hiddenScrollbar"
@@ -39,7 +39,7 @@ const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
             )
           )}
         </Nav>
-        <span className="block flex-shrink-0">
+        {/* <span className="block flex-shrink-0">
           <ButtonPrimary
             className="w-full !pr-16"
             sizeClass="pl-4 py-2.5 sm:pl-6"
@@ -80,9 +80,8 @@ const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
               />
             </span>
           </ButtonPrimary>
-        </span>
+        </span> */}
       </div>
-
       {/* <Transition
         show={isOpen}
         enter="transition-opacity duration-150"
