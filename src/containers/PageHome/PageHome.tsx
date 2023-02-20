@@ -28,6 +28,7 @@ function PageHome() {
 
       {/* SECTION HERO */}
       <SectionHero2 />
+      <input type={"radio"} id="checkbox" />
 
       <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-5">
         <div className=" dark:border-slate-700">
