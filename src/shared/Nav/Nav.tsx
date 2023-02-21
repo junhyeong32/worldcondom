@@ -13,7 +13,9 @@ const Nav: FC<NavProps> = ({
 }) => {
   return (
     <nav className={`nc-Nav ${containerClassName}`} data-nc-id="Nav">
-      <ul className={`flex justify-between w-full  ${className}`}>
+      <ul
+        className={`flex justify-between lg:justify-start w-full  ${className}`}
+      >
         {children}
       </ul>
     </nav>

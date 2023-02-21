@@ -109,162 +109,70 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
   },
 ];
 
-const OTHER_PAGE_CHILD: NavItemType[] = [
-  {
-    id: ncNanoId(),
-    href: "/",
-    name: "Home Demo 1",
-  },
-  {
-    id: ncNanoId(),
-    href: "/home2",
-    name: "Home Demo 2",
-  },
-  {
-    id: ncNanoId(),
-    href: "/page-collection",
-    name: "Category Pages",
-    type: "dropdown",
-    children: [
-      {
-        id: ncNanoId(),
-        href: "/page-collection",
-        name: "Category page 1",
-      },
-      {
-        id: ncNanoId(),
-        href: "/page-collection-2",
-        name: "Category page 2",
-      },
-    ],
-  },
-  {
-    id: ncNanoId(),
-    href: "/product-detail",
-    name: "Product Pages",
-    type: "dropdown",
-    children: [
-      {
-        id: ncNanoId(),
-        href: "/product-detail",
-        name: "Product detail 1",
-      },
-      {
-        id: ncNanoId(),
-        href: "/product-detail-2",
-        name: "Product detail 2",
-      },
-    ],
-  },
-  {
-    id: ncNanoId(),
-    href: "/cart",
-    name: "Cart Page",
-  },
-  {
-    id: ncNanoId(),
-    href: "/checkout",
-    name: "Checkout Page",
-  },
-  {
-    id: ncNanoId(),
-    href: "/page-search",
-    name: "Search Page",
-  },
-  {
-    id: ncNanoId(),
-    href: "/account",
-    name: "Account Page",
-  },
-  {
-    id: ncNanoId(),
-    href: "/about",
-    name: "Other Pages",
-    type: "dropdown",
-    children: [
-      {
-        id: ncNanoId(),
-        href: "/about",
-        name: "About",
-      },
-      {
-        id: ncNanoId(),
-        href: "/contact",
-        name: "Contact us",
-      },
-      {
-        id: ncNanoId(),
-        href: "/login",
-        name: "Login",
-      },
-      {
-        id: ncNanoId(),
-        href: "/signup",
-        name: "Signup",
-      },
-      {
-        id: ncNanoId(),
-        href: "/subscription",
-        name: "Subscription",
-      },
-    ],
-  },
-  {
-    id: ncNanoId(),
-    href: "/blog",
-    name: "Blog Page",
-    type: "dropdown",
-    children: [
-      {
-        id: ncNanoId(),
-        href: "/blog",
-        name: "Blog Page",
-      },
-      {
-        id: ncNanoId(),
-        href: "/blog-single",
-        name: "Blog Single",
-      },
-    ],
-  },
+const Special: NavItemType[] = [
+  { id: ncNanoId(), href: "/product/thin", name: "초박형 콘돔" },
+  { id: ncNanoId(), href: "/product/delay", name: "사정지연 콘돔" },
+  { id: ncNanoId(), href: "/product/spin", name: "돌기 콘돔" },
+  { id: ncNanoId(), href: "/product/finger", name: "손가락 콘돔" },
+  { id: ncNanoId(), href: "/product/marble", name: "구슬 콘돔" },
+];
+
+const Brand: NavItemType[] = [
+  { id: ncNanoId(), href: "/product/okamoto", name: "오카모토" },
+  { id: ncNanoId(), href: "/product/uni", name: "유니더스" },
+  { id: ncNanoId(), href: "/product/sagami", name: "사가미" },
+  { id: ncNanoId(), href: "/product/durex", name: "듀렉스" },
+];
+
+const Set: NavItemType[] = [
+  { id: ncNanoId(), href: "/product/popular", name: "인기콘돔 SET" },
+  { id: ncNanoId(), href: "/product/cdgel", name: "CD+GEL SET" },
+  { id: ncNanoId(), href: "/product/big", name: "대용량 상품" },
 ];
 
 export const NAVIGATION_DEMO_2: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/#",
-    name: "Men",
-    type: "megaMenu",
-    children: MEGAMENU_DEMO,
+    href: "/product/best",
+    name: "Best 상품",
+    // type: "megaMenu",
+    // children: MEGAMENU_DEMO,
   },
   {
     id: ncNanoId(),
-    href: "/#",
-    name: "Women",
+    href: "/product/time",
+    name: "타임세일",
   },
   {
     id: ncNanoId(),
-    href: "/#",
-    name: "Beauty",
+    href: "/product/sepcial",
+    name: "특수콘돔",
+    type: "dropdown",
+    children: Special,
   },
 
   {
     id: ncNanoId(),
-    href: "/#",
-    name: "Sport",
-  },
-  {
-    id: ncNanoId(),
-    href: "/#",
-    name: "Templates",
-    type: "megaMenu",
-    children: MEGAMENU_TEMPLATES,
-  },
-  {
-    id: ncNanoId(),
-    href: "#",
-    name: "Explore",
+    href: "/product/set",
+    name: "Set 상품",
     type: "dropdown",
-    children: OTHER_PAGE_CHILD,
+    children: Set,
+  },
+  {
+    id: ncNanoId(),
+    href: "/#",
+    name: "러브/마사지젤",
+  },
+  {
+    id: ncNanoId(),
+    href: "/product/brand",
+    name: "브랜드별 콘돔",
+    type: "dropdown",
+    children: Brand,
+  },
+  {
+    id: ncNanoId(),
+    href: "/community",
+    name: "COMMUNITY",
   },
 ];

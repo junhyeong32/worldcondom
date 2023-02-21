@@ -8,16 +8,19 @@ import TabFilters from "components/TabFilters";
 import { Transition } from "@headlessui/react";
 
 export interface HeaderFilterSectionProps {
-  className?: string;
   heading?: string;
+  navItemList?: [] | Array<string>;
+  className?: string;
 }
 
 const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
-  className = "mb-12",
   heading,
+  navItemList = ["전체", "여성인기", "남성인기", "특수콘돔", "NEW"],
+  className = "mb-12",
 }) => {
   const [isOpen, setIsOpen] = React.useState(true);
   const [tabActive, setTabActive] = React.useState("전체");
+  console.log("navItemList", navItemList);
 
   return (
     <div className={`flex flex-col relative ${className}`}>
@@ -27,17 +30,15 @@ const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
           className="sm:space-x-2"
           containerClassName="relative flex w-full justify-between overflow-x-auto text-sm md:text-base scroll-bar"
         >
-          {["전체", "여성인기", "남성인기", "특수콘돔", "NEW"].map(
-            (item, index) => (
-              <NavItem
-                key={index}
-                isActive={tabActive === item}
-                onClick={() => setTabActive(item)}
-              >
-                {item}
-              </NavItem>
-            )
-          )}
+          {navItemList.map((item: any, index: any) => (
+            <NavItem
+              key={index}
+              isActive={tabActive === item}
+              onClick={() => setTabActive(item)}
+            >
+              {item}
+            </NavItem>
+          ))}
         </Nav>
         {/* <span className="block flex-shrink-0">
           <ButtonPrimary
