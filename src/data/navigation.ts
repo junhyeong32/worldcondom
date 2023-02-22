@@ -145,7 +145,7 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/product/sepcial",
+    href: "/product/special",
     name: "특수콘돔",
     type: "dropdown",
     children: Special,
@@ -166,7 +166,7 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
   {
     id: ncNanoId(),
     href: "/product/brand",
-    name: "브랜드별 콘돔",
+    name: "콘돔 브랜드",
     type: "dropdown",
     children: Brand,
   },

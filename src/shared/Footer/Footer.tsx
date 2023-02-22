@@ -47,7 +47,7 @@ const widgetMenus: WidgetFooterMenu[] = [
   },
   {
     id: "6",
-    title: "브랜드별 콘돔",
+    title: "콘돔 브랜드",
     menus: [
       { href: "/product/okamoto", label: "오카모토" },
       { href: "/product/uni", label: "유니더스" },

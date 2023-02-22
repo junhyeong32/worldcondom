@@ -24,7 +24,7 @@ const urlByData = [
     desc: "월드콘돔에서 현재 가장 잘 나가는 BEST 상품!",
   },
   {
-    href: "/product/sepcial",
+    href: "/product/special",
     name: "특수콘돔",
     desc: "특수콘돔(기능성 콘돔)은 일반형 과는 달리 특수한 기능이 접목되어 있는 콘돔을 말합니다.",
   },
@@ -120,7 +120,7 @@ const PageProduct: FC<PageProductProps> = ({ className = "" }) => {
         <title>Collection || Ciseco Ecommerce Template</title>
       </Helmet>
 
-      <div className="container py-16 lg:pb-28 lg:pt-20 space-y-16 sm:space-y-20 lg:space-y-28">
+      <div className="container py-8 lg:pb-28 space-y-16 sm:space-y-20 lg:space-y-28">
         <div className="space-y-10 lg:space-y-14">
           {/* HEADING */}
           <div className="max-w-screen-sm">
@@ -136,9 +136,9 @@ const PageProduct: FC<PageProductProps> = ({ className = "" }) => {
             </span>
           </div>
 
-          <hr className="border-slate-200 dark:border-slate-700" />
-          <main>
-            <div className="relative space-y-24 my-24 lg:space-y-32 lg:my-32">
+          <hr className="border-slate-200 dark:border-slate-700 " />
+          <main className="lg:!mt-5 sm:!mt-5">
+            <div className="relative my-">
               {/* {PRODUCTS.map((item, index) => (
                 <ProductCard data={item} key={index} />
               ))} */}
